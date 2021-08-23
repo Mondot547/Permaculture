@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+    background-color: silver;
+} 
+h2, h3, h4, .nav-item, #transition, footer {
+    text-align: center;
+}
+
+/* **************HEADER************ */
+
+header {
+    background: url(./media/main.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;/*prend 100% de l'écran*/
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 5em;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px #bcf5a9;
+    animation: titre ease 5s
+}
+@keyframes titre {
+    0% {
+        opacity: 0;
+        transform: translateY(350px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+main {
+    background-color: silver;
+    border-radius: 20px 20px 0 0;
+}
+/* ************LEFTPART************ */
+#leftPart {
+    background-color: #bcf5a9;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 20px;
+}
+.elements {
+    padding: 70px 0;
+    
+}
+.elements img {
+    border-radius: 50%;
+    width: 200px;
+}
+.elements p {
+    font-size: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;/*permet de mettre le paragrapfe sur quatre ligne et de chacher le reste avec des points*/
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 20px;
+}
+.elements .button {
+    text-align: right;
+    margin: 15px 4% 0 0;
+}
+/* **************rightpart******** */
+#rightPart {
+    background-color: #9B6833;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.tips {
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+}
+.tips h4 {
+    position: relative;
+    color: green;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 2px 2px 0 #bcf5a9, 2px -2px 0 #bcf5a9, -2px 2px 0 #bcf5a9, -2px -2px 0 #bcf5a9, 2px 0px 0 #bcf5a9, 0px 2px 0 #bcf5a9, -2px 0px 0 #bcf5a9, 0px -2px 0 #bcf5a9;
+}
+.tips:hover {
+    transform: scale(1.08);
+    opacity: 0.7;
+    transition: ease-out 0.2s;
+}
+#transition {
+    padding: 50px 0;
+}
+#transition img {
+    animation: rateau ease 8s;/*déclare l'animation*/
+    animation-iteration-count: infinite;/*met l'animation en mode infinie*/
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes rateau {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    9% {
+        transform: translate(79%, -22px);
+    }
+    26% {
+        transform: translate(-4px, -5px);
+    }
+    33% {
+        transform: translate(80px, 18px);
+    }
+    48% {
+        transform: translate(-17, -13px);
+    }
+    56% {
+        transform: translate(57px, -45px);
+    }
+    71% {
+        transform: translate(-11px, -12px);
+    }
+    82% {
+        transform: translate(72px, 7px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* *********************NEWSLETTER*************** */
+
+#newsletter {
+    background: url(./media/newsletter.jpeg)no-repeat 50%50%;
+    background-size: cover;
+    height: 370px;
+    width: 70%;
+    min-width: 450px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 70px;
+}
+#newsletter h4 {
+    margin-top: 15px;
+    padding: 100px 0 20px 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 0 #bcf5a9, 2px -2px 0 #bcf5a9, -2px 2px 0 #bcf5a9, -2px -2px 0 #bcf5a9, 2px 0px 0 #bcf5a9, 0px 2px 0 #bcf5a9, -2px 0px 0 #bcf5a9, 0px -2px 0 #bcf5a9;
+}
+#newsletter .input-group {
+    width: 40%;
+    min-width: 350px;
+    margin: 0 auto;
+}
+/* ****************footer**************** */
+
+footer {
+    background-color: #bcf5a9;
+    padding: 15px 0 4px 0;
+}

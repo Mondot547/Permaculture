@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+    background-color: lightgray;
+} 
+h2, h3, h4 {
+    text-align: center;
+}
+
+/* ************HEADER******* */
+
+header {
+    background:  url(./media/main.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 5em;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px #bcf5a9;
+    animation: titre ease 5s;
+}
+@keyframes titre {
+    0% {
+        opacity: 0;
+        transform: translateY(350px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.calendrier {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 20px solid lightgrey;
+    min-width: 100%;
+    width: 200px;
+}
+footer {
+    background-color: #bcf5a9;
+    padding: 15px 0 4px 0;
+    text-align: center;
+}
